@@ -1,0 +1,118 @@
+.nearbyStores-contain {
+  background-color: #fff;
+  overflow: inherit;
+
+  .search-contain {
+    height: 40px;
+  }
+  .map-tips {
+    background-color: #fff;
+    border: 1px solid #e2dede;
+    position: fixed;
+    bottom: 0;
+    min-height: 100px;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 0 10px 10px;
+    .tips-info {
+      margin: 20px 4px 5px 11px;
+      .tips-name {
+        font-size: 16px;
+        min-height: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        span {
+          width: 265px;
+          display: inline-block;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-all;
+        }
+      }
+      .tips-address {
+        color: #999999;
+        font-size: 12px;
+        min-height: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+    }
+    .tips-navigation {
+      line-height: 35px;
+      margin-top: 5px;
+      white-space: nowrap;
+      .navigation-btn {
+        display: inline-block;
+        height: 30px;
+        width: 49%;
+        border-radius: 4px;
+        text-align: center;
+        .plan {
+          background: url(../images/road.png) 6px 10px no-repeat;
+          background-size: 15px 15px;
+          height: 30px;
+          width: 30px;
+          color: #000;
+          font-size: 14px;
+          padding-left: 30px;
+          padding-top: 2px;
+          display: inline-block;
+        }
+      }
+      .navigation-btn:after {
+        content: "|";
+        height: 30px;
+        width: 5px;
+        color: #ddd;
+        float: right;
+      }
+      .navigation-sep {
+        float: left;
+        height: 100%;
+        width: 1px;
+        background: #bbb;
+      }
+      .navigation-phone {
+        display: inline-block;
+        height: 30px;
+        width: 49%;
+        border-radius: 4px;
+        text-align: center;
+        .phone {
+          color: #999999;
+          background: url(../images/tel-no.png) 0 10px no-repeat;
+          background-size: 15px 15px;
+          height: 30px;
+          width: 30px;
+          font-size: 14px;
+          padding-left: 30px;
+          padding-top: 2px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .weui_search_outer {
+    background-color: transparent;
+  }
+  .weui_search_inner {
+    background-color: rgb(234, 234, 234);
+    border-radius: 4px;
+  }
+  .weui_search_bar {
+    background-color: #ffffff;
+    .weui_search_text {
+      background-color: rgb(234, 234, 234);
+      border-radius: 4px;
+    }
+    &::after {
+      content: none;
+    }
+  }
+}

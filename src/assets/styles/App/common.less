@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-weight: 300 !important;
+  -webkit-user-select: none; /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+button, h1, h2, h3, h4, h5, h6, input {
+  font-weight: 300 !important;
+}
+
+a, img {
+  -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+
+a {
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/**
+* vue-router transition
+*/
+
+.vux-pop-out-enter-active,
+.vux-pop-out-leave-active,
+.vux-pop-in-enter-active,
+.vux-pop-in-leave-active {
+  will-change: transform;
+  position: absolute;
+  left: 0;
+}
+
+.vux-pop-out-enter-active {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.vux-pop-out-leave-active {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+.vux-pop-in-enter-active {
+  perspective: 1000;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.vux-pop-in-leave-active {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/**
+* clearfix hack
+*/
+
+.clearfix {
+  &.span {
+    height: 8px;
+    background-color: #eee
+  }
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.BMapLib_trans {
+  display: none;
+}
